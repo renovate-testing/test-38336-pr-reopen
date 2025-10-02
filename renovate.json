@@ -1,3 +1,10 @@
   {
-    "extends": [":prConcurrentLimitNone", ":prHourlyLimitNone"]
+    "extends": [":prConcurrentLimitNone", ":prHourlyLimitNone"],
+    "packageRules": [
+       {
+        "description": "Allow",
+        "matchPackageNames": ["/.*checkout.*/"],
+        "allowedVersions": "/^v4\\.2\\.1$/"
+      }
+    ]
   }
